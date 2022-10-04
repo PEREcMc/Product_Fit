@@ -1,0 +1,19 @@
+html {
+    // scroll-behavior: smooth;
+}
+body {
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.hidden {
+    display: none;
+}
