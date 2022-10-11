@@ -1,0 +1,116 @@
+.blog {
+    background: url('../../img/blog/blog-bg.png') 0 0%/100vw no-repeat, #F8FFFF;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url('../../img/blog/Ellipse1.svg');
+        background-repeat: no-repeat;
+        width: 87px;
+        height: 87px;
+        left: 0;
+        bottom: 0;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        background-image: url('../../img/blog/Ellipse2.svg');
+        background-repeat: no-repeat;
+        width: 98px;
+        height: 98px;
+        left: 123px;
+        top: 0;
+    }
+}
+.container {
+}
+.blog__wrapper {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 79px;
+}
+.blog__text {
+    padding: 122px 0px;
+}
+.blog__date {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 250%;
+    text-transform: uppercase;
+    color: #F05670;
+    margin-bottom: 6px;
+}
+.header__title {
+}
+.title__blog {
+    max-width: 608px;
+}
+.blog__img {
+    position: relative;
+    // &::before {
+    //     content: '';
+    //     position: absolute;
+    //     background: url('../../img/blog/Ellipse.png');
+    //     background-color: #FEFEFE;
+    //     width: 732px;
+    //     height: 732px;
+    // }
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url('../../img/blog/Ellipse3.svg');
+        background-repeat: no-repeat;
+        width: 174px;
+        height: 87px;
+        bottom: -24px;
+        left: -132px;
+    }
+    // &::after {
+    //     content: '';
+    //     position: absolute;
+    //     background-image: url('../../img/blog/Ellipse4.svg');
+    //     background-repeat: no-repeat;
+    //     width: 82px;
+    //     height: 82px;
+    //     top: -24px;
+    //     right: -182px;
+    // }
+}
+.arrow__back {
+    position: absolute;
+    left: 0;
+    // bottom: 50%;
+    & > svg {
+        path {
+            transition: all 0.3s ease
+        }
+    }
+        &:hover {
+            & > svg {
+                path {
+                    opacity: 1;
+                }
+        }
+    }
+}
+.arrow__next {
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    & > svg {
+        path {
+            transition: all 0.3s ease
+        }
+    }
+        &:hover {
+            & > svg {
+                path {
+                    opacity: 1;
+                }
+        }
+    }
+}
